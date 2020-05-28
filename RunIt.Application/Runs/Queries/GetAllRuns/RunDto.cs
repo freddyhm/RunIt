@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using RunIt.Application.Mappings;
+using RunIt.Domain.Common;
+using RunIt.Domain.ValueObjects;
 using RunIt.Runs.Entities;
-using RunIt.Runs.SimpleObjects;
-using RunIt.Runs.ValueObjects;
 
 namespace RunIt.Application.Runs.Queries.GetAllRuns
 {

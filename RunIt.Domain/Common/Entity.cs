@@ -23,8 +23,8 @@ namespace RunIt.Common
             if (GetType() != other.GetType())
                 return false;
 
-            //if (Id == 0 || other.Id == 0)
-            //    return false;
+            if (Id == 0 || other.Id == 0)
+                return false;
 
             return Id == other.Id;
         }

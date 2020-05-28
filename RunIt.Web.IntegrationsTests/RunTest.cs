@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FluentAssertions;
+using RunIt.Domain.Common;
+using RunIt.Domain.ValueObjects;
 using RunIt.Runs.Entities;
-using RunIt.Runs.SimpleObjects;
-using RunIt.Runs.ValueObjects;
 using Xunit;
 
 namespace RunIt.Tests

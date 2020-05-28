@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using RunIt.Application.Common.Interfaces;
+using RunIt.Domain.Common;
+using RunIt.Domain.ValueObjects;
 using RunIt.Runs.Entities;
-using RunIt.Runs.SimpleObjects;
-using RunIt.Runs.ValueObjects;
 
 namespace RunIt.Infrastructure.Persistence
 {

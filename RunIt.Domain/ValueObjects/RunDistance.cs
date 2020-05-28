@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using RunIt.Common;
+﻿using RunIt.Common;
 
-namespace RunIt.Runs.ValueObjects
+namespace RunIt.Domain.ValueObjects
 {
     public class RunDistance : ValueObject<RunDistance>
     {

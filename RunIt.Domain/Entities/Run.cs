@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using RunIt.Common;
-using RunIt.Runs.SimpleObjects;
-using RunIt.Runs.ValueObjects;
+using RunIt.Domain.Common;
+using RunIt.Domain.ValueObjects;
 
 namespace RunIt.Runs.Entities
 {
