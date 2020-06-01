@@ -1,16 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using FluentAssertions;
 using RunIt.Domain.ValueObjects;
 using Xunit;
 
-namespace RunIt.Tests
+namespace RunIt.Domain.UnitTests.ValueObjects
 {
     public class WaterSupplyTest
     {
+        [Fact]
+        public void ShouldReturnWaterSupplyWhenQuantityGreaterThan0()
+        {
+            var qty = 4;
+            var result = WaterSupply.Create(qty);
+            var waterSupply = result.Value;
+
+            waterSupply.Value.Should().Be(qty);
+        }
+
         [Fact]
         public void ShouldThrowInvalidOperationExceptionForNegativeWaterSupply()
         {

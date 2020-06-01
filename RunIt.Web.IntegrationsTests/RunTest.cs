@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using FluentAssertions;
 using RunIt.Domain.Common;
 using RunIt.Domain.ValueObjects;
 using RunIt.Runs.Entities;

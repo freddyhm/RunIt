@@ -1,16 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using FluentAssertions;
 using RunIt.Domain.ValueObjects;
 using Xunit;
 
-namespace RunIt.Tests
+namespace RunIt.Domain.UnitTests.ValueObjects
 {
     public class WindSpeedTest
     {
+
+        [Fact]
+        public void ShouldReturnWindSpeedWhenSpeedGreaterThan0()
+        {
+            var speed = 15;
+            var result = RunWindSpeed.Create(speed);
+            var windSpeed = result.Value;  
+           
+            windSpeed.Value.Should().Be(speed);
+        }
+
         [Fact]
         public void ShouldThrowInvalidOperationExceptionForNegativeWindSpeed()
         {

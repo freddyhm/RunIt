@@ -1,16 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using FluentAssertions;
 using RunIt.Domain.ValueObjects;
 using Xunit;
 
-namespace RunIt.Tests
+namespace RunIt.Domain.UnitTests.ValueObjects
 {
     public class RunDistanceTest
     {
+        [Fact]
+        public void ShouldReturnRunDistanceWhenDistanceGreaterThan0()
+        {
+            const int distance = 10;
+            var result = RunDistance.Create(distance);
+            var runDistance = result.Value;
+
+            runDistance.Value.Should().Be(distance);
+        }
+
         [Fact]
         public void ShouldThrowInvalidOperationExceptionForNegativeDistance()
         {
