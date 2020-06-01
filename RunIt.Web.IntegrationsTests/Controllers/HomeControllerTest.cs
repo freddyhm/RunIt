@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FluentAssertions;
-using Moq;
-using Xunit;
+﻿using Xunit;
 
-namespace RunIt.Tests
+namespace RunIt.Web.IntegrationsTests.Controllers
 {
     public class HomeControllerTest
     {

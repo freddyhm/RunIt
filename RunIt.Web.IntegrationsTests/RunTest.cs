@@ -1,15 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FluentAssertions;
 using RunIt.Domain.Common;
 using RunIt.Domain.ValueObjects;
 using RunIt.Runs.Entities;
 using Xunit;
 
-namespace RunIt.Tests
+namespace RunIt.Web.IntegrationsTests
 {
     public class RunTest
     {
