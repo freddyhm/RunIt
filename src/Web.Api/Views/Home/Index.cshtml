@@ -1,0 +1,31 @@
+﻿@model RunIt.Application.Runs.Queries.GetAllRuns.AllRunsViewModel 
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Temp</th>
+                <th>Wind Speed</th>
+                <th>Clothes</th>
+                <th>Quality</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var run in Model.AllRuns)
+            {
+                <tr>
+                    <td>@run.Date</td>
+                    <td>@run.Distance</td>
+                    <td>@run.Type</td>
+                    <td>@run.RunTemperature.Value</td>
+                    <td>@run.RunWindSpeed.Value</td>
+                    <td>@run.Clothes.Items</td>
+                    <td>@run.SatisfactionLevel</td>
+                    <td>@run.Notes</td>
+                    <td>@run.Gear</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
